@@ -1,6 +1,6 @@
 Name:                   gloss-game
 Version:                0.3.3.0
-Cabal-version:          >= 1.6
+Cabal-version:          >= 1.8
 Tested-with:            GHC >= 7.6
 Build-type:             Simple
 
@@ -56,3 +56,33 @@ Library
 source-repository head
   type:                 git
   location:             https://github.com/mchakravarty/gloss-game
+
+executable bounce
+  main-is: Main.hs
+  hs-source-dirs: examples/bounce
+  build-depends:        base                    >= 4 && < 5,
+                        gloss-game
+  ghc-options:          -O2
+                        -Wall
+                        -fwarn-tabs
+                        -fno-warn-name-shadowing
+
+executable slime
+  main-is: Main.hs
+  hs-source-dirs: examples/slime
+  build-depends:        base                    >= 4 && < 5,
+                        gloss-game
+  ghc-options:          -O2
+                        -Wall
+                        -fwarn-tabs
+                        -fno-warn-name-shadowing
+
+executable bouncy-slime
+  main-is: Main.hs
+  hs-source-dirs: examples/bouncy-slime
+  build-depends:        base                    >= 4 && < 5,
+                        gloss-game
+  ghc-options:          -O2
+                        -Wall
+                        -fwarn-tabs
+                        -fno-warn-name-shadowing

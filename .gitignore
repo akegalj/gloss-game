@@ -4,7 +4,9 @@ cabal-dev
 *.hi
 *.chi
 *.chs.h
+*.swp
 .virthualenv
+dist-newstyle/
 
 examples/bounce/Bounce
 
